@@ -1,0 +1,7 @@
+(library
+(name chat_lib)
+(public_name chat-lib)
+(wrapped false)
+(libraries core_kernel threads threads.posix batteries unix)
+)
+	

@@ -1,0 +1,4 @@
+# dune build --profile release @install
+# OCAMLPARAM: unset
+$ /usr/bin/nproc > /tmp/dune951166.output 2> /dev/null
+$ /home/bryan/.opam/4.06.1/bin/ocamlc.opt -config > /tmp/duneb0f4dc.output

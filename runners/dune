@@ -1,0 +1,7 @@
+(executables
+ (names chat)
+ (public_names chat)
+  (modules chat)
+  (libraries chat_lib core
+	      ppx_let)
+  (preprocess (pps ppx_let )))
