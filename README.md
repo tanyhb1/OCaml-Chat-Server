@@ -8,18 +8,13 @@ Once connection has been established, the server and client can send messages to
 The implementation primarily uses two threads for _receiving_ and _sending_ messages for asynchronous chat logic. Every message is formatted as follows: we determine "correct" messages as messages with either a 'S' prefix, denoting a SENT message, or a 'A' prefix, denoting that the message is an acknowledgement. This prefix is followed by 4 bytes specifying the size of the message payload. Incorrect messages are thus messages which do not abide by this specification.
 
 ## Getting started
-To build the project, simply type `make`. Then, calling `./bin/chat` together with the relevant flags will start the chat as a _client_ or a _server_.
-
-Usage:
-
-Host and port are set to localhost by default.
-
-Starts as server by default, specify server_mode by using optional flag [-m 'client'/'server']
+To build the project, simply type `make`. Then, calling `./bin/chat` together with the relevant flags will start the chat as a _client_ or a _server_. Host and port are set to localhost by default. Starts as server by default, specify server_mode by using optional flag [-m 'client'/'server']
 
 Flags:
-  `-m {client|server}` By default, starts as server`
-  `-h [Host to connect to: default localhost (127.0.0.1)]`
-  `-p [Port to connect to: default 8888]`
+
+  * `-m {client|server}` By default, starts as server`
+  * `-h {Host to connect to: default localhost (127.0.0.1)}`
+  * `-p {Port to connect to: default 8888}`
 
 
 ## Potential room for improvements
