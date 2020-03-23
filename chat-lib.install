@@ -30,3 +30,6 @@ lib: [
 bin: [
   "_build/install/default/bin/chat"
 ]
+doc: [
+  "_build/install/default/doc/chat-lib/README.md"
+]

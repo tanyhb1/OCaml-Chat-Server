@@ -14,6 +14,6 @@ let send_msg socket_descr msg =
 let send_ack socket_descr current_time msg =
   let time = Unix.gettimeofday () in
   Format.printf "@[@.< %s@.@]@[> @]@?" msg;
-  let ack = "Affffffff" ^ (Printf.sprintf "ack: \"%s\", time : \"%f\"" msg (time -. !current_time)) in
+  let ack = "Affffffff" ^ (Printf.sprintf "Message received! Message sent was: \"%s\", Round-trip time : \"%f\"" msg (time -. !current_time)) in
   current_time := time;
   send_msg socket_descr (Bytes.of_string ack)
