@@ -1,7 +1,0 @@
-version = "1.0"
-description = ""
-requires = "batteries core_kernel threads threads.posix unix"
-archive(byte) = "chat_lib.cma"
-archive(native) = "chat_lib.cmxa"
-plugin(byte) = "chat_lib.cma"
-plugin(native) = "chat_lib.cmxs"
