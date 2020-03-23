@@ -43,8 +43,7 @@ let sending_thread socket_descr socket_addr online _ =
       (*poll to check if should return/restart *)
       let ready = Thread.wait_timed_read stdin 0.015 in
       if (ready) then        
-        ( Printf.printf ">";
-          flush Pervasives.stdout;
+        ( Printf.printf ">";flush Pervasives.stdout;
           try
             let msg = read_line () in
             if (String.length msg > 0) then
