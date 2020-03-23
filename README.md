@@ -10,12 +10,17 @@ The implementation primarily uses two threads for _receiving_ and _sending_ mess
 ## Getting started
 To build the project, simply type `make`. Then, calling `./bin/chat` together with the relevant flags will start the chat as a _client_ or a _server_.
 
-Usage: `
-Host and port are set to localhost by default. Starts as server by default, specify server_mode by using optional flag [-m 'client'/'server']
-  -m {client|server} By default, starts as server
-  -h Host to connect to: default localhost (127.0.0.1)
-  -p Port to connect to: default 8888
-`
+Usage:
+
+Host and port are set to localhost by default.
+
+Starts as server by default, specify server_mode by using optional flag [-m 'client'/'server']
+
+Flags:
+  `-m {client|server}` By default, starts as server`
+  `-h [Host to connect to: default localhost (127.0.0.1)]`
+  `-p [Port to connect to: default 8888]`
+
 
 ## Potential room for improvements
 As of now, we implement a fixed message buffer size of 4096. Furthermore, there is the possibility of our stream of bytes being interrupted, leading to messages that are incomplete. This can be resolved using implementation of message patching by storing states.  
