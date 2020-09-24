@@ -1,4 +1,4 @@
-# AhrefsChatServer
+# ChatServer
 This is a chat server application written in `OCaml` using the `Unix` library (together with some general purpose libraries from Jane Street). It can start in two modes:
 * as a server, waiting for *one* client to connect
 * as a client, taking an IP address of server to connect to.
